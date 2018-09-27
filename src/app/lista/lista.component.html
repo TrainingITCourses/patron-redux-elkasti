@@ -1,0 +1,9 @@
+<h2>Lanzamientos</h2>
+<div>Total {{(launches | async)?.length}}</div>
+<div>
+  <ul>
+    <li *ngFor="let launch of launches | async">
+      {{launch.name}}
+    </li>
+  </ul>
+</div>
